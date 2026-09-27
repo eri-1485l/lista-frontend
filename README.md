@@ -1,6 +1,6 @@
 # Lista Frontend
 
-A Vue 3 single-page application (SPA) for a personal list of **danmei** books (Chinese BL novels). Users sign in with username and password, receive a JWT from Keycloak, and then browse or add books through a FastAPI backend.
+A Vue 3 single-page application (SPA) for a personal list of books. Users sign in with username and password, receive a JWT from Keycloak, and then browse or add books through a FastAPI backend.
 
 This repository is the frontend of a three-repo assignment: this app, a FastAPI backend, and an LDAP + Keycloak lab environment.
 
@@ -186,9 +186,3 @@ This frontend is meant to be used together with:
 
 Replace `<org>` with the actual GitHub organization or username.
 
----
-
-## Notes / disclaimer
-
-This project is a **class assignment**. It is not production software. The Resource Owner Password grant, tokens in `localStorage`, and hardcoded local URLs are acceptable for the lab, not as a general security recommendation.
-)
