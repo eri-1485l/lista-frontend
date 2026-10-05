@@ -64,7 +64,7 @@ async function handleLogin() {
       { headers: { 'Content-Type': 'application/x-www-form-urlencoded' } }
     )
 
-    console.log('✅ Token recibido de Keycloak:', response.data.access_token)
+    
     authStore.setToken(response.data.access_token, username.value)
     router.push('/dashboard')
   } catch (err) {
