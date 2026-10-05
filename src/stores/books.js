@@ -16,7 +16,6 @@ export const useBooksStore = defineStore('books', () => {
   api.interceptors.request.use(config => {
     if (authStore.token) {
       config.headers.Authorization = `Bearer ${authStore.token}`
-      console.log('🔐 Enviando petición con JWT:', config.headers.Authorization)
     }
     return config
   })
